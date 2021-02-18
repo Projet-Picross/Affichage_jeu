@@ -167,22 +167,7 @@ void affichage_jeu(int mat_condi_colonnes[N][N], int mat_condi_lignes[N][N], int
       tab_ligne[k] = mat_condi_lignes[i][j];
     for(j = 0; j < N; j++, k++)
       tab_ligne[k] = grille[i][j];
-    //Affichage des conditions
-    /*
-    for(i = 0; i < nb_max_cond_lignes; i++){
-      if(tab_ligne[i])
-        printf("%i ", tab_ligne[i]);
-      else
-        printf(" ");
-    }
-    //Affichage des cases
-    for(; i < N*N; i++){
-      if(tab_ligne[i])
-        printf("x ");
-      else
-        printf(" ");
-    }
-    */
+    //Affichage des lignes avec leurs conditions
     for(l = 0; l <= (N+nb_max_cond_lignes); l++)
       if(l < nb_max_cond_lignes+1){
         if(tab_ligne[l])
