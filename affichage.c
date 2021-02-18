@@ -160,7 +160,7 @@ void affichage_jeu(int mat_condi_colonnes[N][N], int mat_condi_lignes[N][N], int
   }
   printf("\n");
 
-  //Affichage côte à côte de les conditions de ligne et de la grille
+  //Affichage côte à côte des conditions de ligne et de la grille
   for(i = 0; i < N; i++){
     //Affectation du tableau représentant la ligne
     for(j = nb_max_cond_lignes, k = 0; j >= 0; j--, k++)
